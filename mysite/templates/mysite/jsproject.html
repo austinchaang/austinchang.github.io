@@ -1,0 +1,58 @@
+{% extends "mysite/projectlayout.html" %}
+
+{% block body %}
+{% load static %}
+
+<div class="bg-dark text-white">
+    <section class="text-center container" style="padding-top: 65px; padding-bottom: 2%;">
+        <div class="display-1">TIC TAC TOE</div>
+    </section>
+</div>
+
+<section class="text-center container-fluid gamesection">
+  <div class= "row justify-content-center">
+    <div class="display-4">PLAY</div>
+    <table class="table table-lg table-responsive" style="width: 50vw; height: 50vw;">
+      <tbody>
+        <tr>
+          <td>
+            <button type="button" class="btn btn-dark btn-lg btn-block topleft" id="gamebutton"></button>
+          </td>
+          <td>
+            <button type="button" class="btn btn-dark btn-lg btn-block topcenter" id="gamebutton"></button>
+          </td>
+          <td>
+            <button type="button" class="btn btn-dark btn-lg btn-block topright" id="gamebutton"></button>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <button type="button" class="btn btn-dark btn-lg btn-block middleleft" id="gamebutton"></button>
+          </td>
+          <td>
+            <button type="button" class="btn btn-dark btn-lg btn-block middlecenter" id="gamebutton"></button>
+          </td>
+          <td>
+            <button type="button" class="btn btn-dark btn-lg btn-block middleright" id="gamebutton"></button>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <button type="button" class="btn btn-dark btn-lg btn-block bottomleft" id="gamebutton"></button>
+          </td>
+          <td>
+            <button type="button" class="btn btn-dark btn-lg btn-block bottomcenter" id="gamebutton"></button>
+          </td>
+          <td>
+            <button type="button" class="btn btn-dark btn-lg btn-block bottomright" id="gamebutton"></button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div>
+    <button type="button" id="restartbutton" class="btn btn-lg btn-secondary restartbutton">Play Again</button>
+  </div>
+</section>
+
+{% endblock %}
