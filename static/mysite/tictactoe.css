@@ -1,0 +1,39 @@
+#gamebutton {
+    height: 100%;
+    width: 100%;
+    font-size: 16vmin;
+    font-weight: bolder;
+}
+
+@media (max-width: 1600px) {
+    #gamebutton {
+        font-size: 6vmin;
+        font-weight: bolder;
+
+    }
+}
+
+@media (max-width: 400px) {
+    #gamebutton {
+        font-size: 2vmin;
+    }
+}
+
+.gamesection {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+td {
+    padding: 0;
+    width: 33%;
+    height: 33%;
+}
+
+.winner {
+    height: 100%;
+    width: 100%;
+    font-size: 16vmin;
+    font-weight: bolder;
+    color: yellow
+}
