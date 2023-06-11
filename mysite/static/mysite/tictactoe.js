@@ -57,7 +57,7 @@ function findWinner() {
     celebrateWinner(bottomleft, bottomcenter, bottomright);
   } else if (topleft.innerHTML !== "" && topleft.innerHTML === middlecenter.innerHTML && middlecenter.innerHTML === bottomright.innerHTML) {
     celebrateWinner(topleft, middlecenter, bottomright);
-  } else if (topright.innerHTML !== "" && topright.innerHTML === middlecenter.innerHTML && middlecenter.innerHTML === bottomright.innerHTML) {
+  } else if (topright.innerHTML !== "" && topright.innerHTML === middlecenter.innerHTML && middlecenter.innerHTML === bottomleft.innerHTML) {
     celebrateWinner(topright, middlecenter, bottomleft);
   }
 }
