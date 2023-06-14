@@ -20,104 +20,106 @@
         </h5>
 
         <figure class="figure">
-            <img class="rounded float-left" src="{% static 'mysite/biking.jpeg' %}" alt="first biking photo" width="300" height="400">
+            <img class="rounded float-left" src="{% static 'biking.jpeg' %}" alt="first biking photo" width="300" height="400">
             <figcaption class="figure-caption text-white">Lionsgate Bridge</figcaption>
         </figure>
 
         <figure class="figure">
-            <img class="rounded float-right" src="{% static 'mysite/biking2.jpeg' %}" alt="second biking photo" width="300" height="400">
+            <img class="rounded float-right" src="{% static 'biking2.jpeg' %}" alt="second biking photo" width="300" height="400">
             <figcaption class="figure-caption text-white">Ambleside Park</figcaption>
         </figure>
     
 
         <figure class="figure">
-            <img class="rounded float-left" src="{% static 'mysite/biking3.jpeg' %}" alt="third biking photo" width="300" height="400">
+            <img class="rounded float-left" src="{% static 'biking3.jpeg' %}" alt="third biking photo" width="300" height="400">
             <figcaption class="figure-caption text-white">Ironworkers Memorial Bridge</figcaption>
         </figure>
 
         <figure class="figure">
-            <img class="rounded float-right" src="{% static 'mysite/biking4.jpeg' %}" alt="fourth biking photo" width="300" height="400">
+            <img class="rounded float-right" src="{% static 'biking4.jpeg' %}" alt="fourth biking photo" width="300" height="400">
             <figcaption class="figure-caption text-white">Spanish Banks Beach</figcaption>
         </figure>
 
         <div class="display-4">Travelling</div>
         <h5 class="text-white container">Some of the cool places I've visited so far: 
         </h5>
-        <ul class="list-unstyled">
-            <li><h5>Vietnam</h5></li>
-            <li><h5>Indonesia</h5></li>
-            <li><h5>Los Angeles</h5></li>
-            <li><h5>Hawaii</h5></li>
-            <!-- <li><h5>Thailand</h5></li>
-            <li><h5>Malaysia</h5></li>
-            <li><h5>Japan</h5></li> -->
-        </ul>
+        <table class= "table">
+            <tbody>
+                <tr>
+                  <td>Vietnam</td>
+                  <td>Indonesia</td>
+                  <td>Hawaii</td>
+                </tr>
+                <tr>
+                  <td>Japan</td>
+                  <td>Thailand</td>
+                  <td>Malaysia</td>
+                </tr>
 
+              </tbody>
+            
+        </table>
                 
         <div class="row">
             <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
                 <figure>
-                    <img src="{% static 'mysite/vietnam.jpg' %}" class="w-100 shadow-1-strong rounded mb-4" alt="Golden Hand Bridge"/>
+                    <img src="{% static 'vietnam.jpg' %}" class="w-100 shadow-1-strong rounded mb-4" alt="Golden Hand Bridge"/>
                     <figcaption class="figure-caption text-white">Ba Na Hills, Da Nang, Vietnam</figcaption>
                 </figure>
                 <figure>
-                    <img src="{% static 'mysite/indonesia.jpg' %}" class="w-100 shadow-1-strong rounded mb-4" alt="Bali Beach"/>
+                    <img src="{% static 'indonesia.jpg' %}" class="w-100 shadow-1-strong rounded mb-4" alt="Bali Beach"/>
                     <figcaption class="figure-caption text-white">Padang Padang Beach, Bali, Indonesia</figcaption>
                 </figure>
                 <figure>
-                    <img src="{% static 'mysite/hochiminh.jpg' %}" class="w-100 shadow-1-strong rounded mb-4" alt="Little Tokyo"/>
+                    <img src="{% static 'hochiminh.jpg' %}" class="w-100 shadow-1-strong rounded mb-4" alt="Little Tokyo"/>
                     <figcaption class="figure-caption text-white">Little Tokyo, Ho Chi Minh City, Vietnam</figcaption>
                 </figure>
                 <figure>
-                    <!-- <img src="{% static 'mysite/bangkokchinatown.jpeg' %}" class="w-100 shadow-1-strong rounded mb-4" alt="Chinatown Bangkok"/>
+                    <img src="{% static 'bangkokchinatown.jpg' %}" class="w-100 shadow-1-strong rounded mb-4" alt="Chinatown Bangkok"/>
                     <figcaption class="figure-caption text-white">Chinatown, Bangkok, Thailand</figcaption>
                 </figure>
                 <figure>
-                    <img src="{% static 'mysite/penang.jpeg' %}" class="w-100 shadow-1-strong rounded mb-4" alt="Penang"/>
-                    <figcaption class="figure-caption text-white">George Town, Penang, Malaysia</figcaption>
-                </figure>
-                <figure>
-                    <img src="{% static 'mysite/dotonbori.jpeg' %}" class="w-100 shadow-1-strong rounded mb-4" alt="Dotonbori"/>
+                    <img src="{% static 'dotonbori.jpg' %}" class="w-100 shadow-1-strong rounded mb-4" alt="Dotonbori"/>
                     <figcaption class="figure-caption text-white">Dotonobori, Osaka, Japan</figcaption>
-                </figure> -->
+                </figure>
             </div>
         
             <div class="col-lg-4 mb-4 mb-lg-0">
                 <figure>
-                    <img src="{% static 'mysite/santamonica.jpg' %}" class="w-100 shadow-1-strong rounded mb-4" alt="Santa Monica"/>
+                    <img src="{% static 'santamonica.jpg' %}" class="w-100 shadow-1-strong rounded mb-4" alt="Santa Monica"/>
                     <figcaption class="figure-caption text-white">Santa Monica Pier, Los Angeles, USA</figcaption>
                 </figure>
                 <figure>
-                    <img src="{% static 'mysite/halongbay.jpg' %}" class="w-100 shadow-1-strong rounded mb-4" alt="Ha Long Bay"/>
+                    <img src="{% static 'halongbay.jpg' %}" class="w-100 shadow-1-strong rounded mb-4" alt="Ha Long Bay"/>
                     <figcaption class="figure-caption text-white">Ha Long Bay, Vietnam</figcaption>
                 </figure>
                 <figure>
-                    <!-- <img src="{% static 'mysite/batucaves.jpeg' %}" class="w-100 shadow-1-strong rounded mb-4" alt="Batu Caves"/>
+                    <img src="{% static 'batucaves.jpg' %}" class="w-100 shadow-1-strong rounded mb-4" alt="Batu Caves"/>
                     <figcaption class="figure-caption text-white">Batu Caves, Kuala Lumpur, Malaysia</figcaption>
                 </figure>
                 <figure>
-                    <img src="{% static 'mysite/kl.jpeg' %}" class="w-100 shadow-1-strong rounded mb-4" alt="Kuala Lumpur"/>
+                    <img src="{% static 'kl.jpg' %}" class="w-100 shadow-1-strong rounded mb-4" alt="Kuala Lumpur"/>
                     <figcaption class="figure-caption text-white">Petronas Twin Towers, Kuala Lumpur, Malaysia</figcaption>
-                </figure> -->
+                </figure>
             </div>
         
             <div class="col-lg-4 mb-4 mb-lg-0">
                 <figure>
-                    <img src="{% static 'mysite/ricefieldsindonesia.jpg' %}" class="w-100 shadow-1-strong rounded mb-4" alt="Rice Fields Indonesia"/>
+                    <img src="{% static 'ricefieldsindonesia.jpg' %}" class="w-100 shadow-1-strong rounded mb-4" alt="Rice Fields Indonesia"/>
                     <figcaption class="figure-caption text-white">Tegallalang Rice Terrace, Bali, Indonesia</figcaption>
                 </figure>
                 <figure>
-                    <img src="{% static 'mysite/waikiki.jpg' %}" class="w-100 shadow-1-strong rounded mb-4" alt="Waikiki"/>
+                    <img src="{% static 'waikiki.jpg' %}" class="w-100 shadow-1-strong rounded mb-4" alt="Waikiki"/>
                     <figcaption class="figure-caption text-white">Waikiki Beach, Honolulu, Hawaii, USA</figcaption>
                 </figure>
-                <!-- <figure>
-                    <img src="{% static 'mysite/phuket.jpeg' %}" class="w-100 shadow-1-strong rounded mb-4" alt="Phuket"/>
+                <figure>
+                    <img src="{% static 'phuket.jpg' %}" class="w-100 shadow-1-strong rounded mb-4" alt="Phuket"/>
                     <figcaption class="figure-caption text-white">Old Phuket Town, Phuket, Thailand</figcaption>
                 </figure>
                 <figure>
-                    <img src="{% static 'mysite/meguroriver.jpeg' %}" class="w-100 shadow-1-strong rounded mb-4" alt="Meguro River"/>
+                    <img src="{% static 'meguroriver.jpg' %}" class="w-100 shadow-1-strong rounded mb-4" alt="Meguro River"/>
                     <figcaption class="figure-caption text-white">Meguro River, Tokyo, Japan</figcaption>
-                </figure> -->
+                </figure>
             </div>
         </div>
     </section>

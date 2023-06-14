@@ -48,7 +48,8 @@ else:
 SECRET_KEY = env("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = env("DEBUG")
+# DEBUG = env("DEBUG")
+DEBUG = True
 
 ALLOWED_HOSTS = [
     "0.0.0.0",
@@ -56,6 +57,7 @@ ALLOWED_HOSTS = [
     "127.0.0.1",
     "austinchang.ca",
     "www.austinchang.ca",
+    "localhost",
 ]
 
 
@@ -108,10 +110,16 @@ WSGI_APPLICATION = "mysite.wsgi.application"
 # Use django-environ to parse the connection string
 DATABASES = {"default": env.db()}
 
-# If the flag as been set, configure to use proxy
+# # If the flag as been set, configure to use proxy
 if os.getenv("USE_CLOUD_SQL_AUTH_PROXY", None):
     DATABASES["default"]["HOST"] = "127.0.0.1"
     DATABASES["default"]["PORT"] = 5432
+# DATABASES = {
+#     "default": {
+#         "ENGINE": "django.db.backends.sqlite3",
+#         "NAME": os.path.join(BASE_DIR, "db.sqlite3"),
+#     }
+# }
 
 
 # Password validation
@@ -148,11 +156,20 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
-STATIC_ROOT = "static"
-STATIC_URL = "static/"
-STATICFILES_DIRS = []
+# STATIC_ROOT = "static"
+# STATIC_URL = "static/"
+# STATICFILES_DIRS = []
+STATIC_URL = "https://storage.googleapis.com/personal-website-v2-385420.appspot.com/"
+
+STATICFILES_DIRS = ["gs://personal-website-v2-385420.appspot.com"]
+
+STATIC_ROOT = "gs://personal-website-v2-385420.appspot.com/static/"
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+
+DEFAULT_FILE_STORAGE = "storages.backends.gcloud.GoogleCloudStorage"
+GS_BUCKET_NAME = "personal-website-v2-385420.appspot.com"
+GS_DEFAULT_ACL = "publicRead"  # Optional: Sets the default ACL for new files
