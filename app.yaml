@@ -1,4 +1,4 @@
-runtime: python39
+runtime: python312
 
 env_variables:
   APPENGINE_URL: https://personal-website-v2-385420.uc.r.appspot.com
